@@ -159,6 +159,10 @@ img {
 .sect-main {
     color: var(--section-main-text);
     background-color: var(--bg-accent);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 188px 0;
 }
 .sec-main .container {
