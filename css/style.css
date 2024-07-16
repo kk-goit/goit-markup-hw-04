@@ -253,13 +253,6 @@ img {
     justify-content: center;
     height: 112px;
 }
-.sect-studio-icon > svg {
-    width: 64px;
-    height: 64px;
-    display: block;
-    padding: 0;
-    margin: 0;
-}
 
 .sect-team {
     background-color: var(--bg-team);
@@ -322,11 +315,7 @@ img {
 .sect-team-social-link:focus {
     background-color: var(--social-acent);
 }
-.sect-team-social-link > svg {
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin: 0;
+.sect-team-social-icon {
     fill: var(--social-icon);
 }
 
@@ -445,10 +434,6 @@ img {
 .footer-social-link:focus {
     background-color: var(--bg-foot-social);
 }
-.footer-social-link > svg {
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin: 0;
+.footer-social-icon {
     fill: var(--social-icon);
 }
