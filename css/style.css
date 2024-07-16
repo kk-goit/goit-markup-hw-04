@@ -19,6 +19,7 @@
     --bg-studio-icon: var(--foot-acent);
     --bg-social: var(--logo-acent);
     --social-acent: var(--head-hover);
+    --bg-foot-social: #31d0aa;
 
     --header-brd: #E7E9FC;
     --portfolio-brd: var(--header-brd);
@@ -246,13 +247,17 @@ img {
     background: var(--bg-studio-icon);
     border: 1px solid var(--studio-icon-brd);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
 }
 .sect-studio-icon > svg {
     width: 64px;
     height: 64px;
     display: block;
     padding: 0;
-    margin: 24px auto;
+    margin: 0;
 }
 
 .sect-team {
@@ -298,11 +303,16 @@ img {
     justify-content: center;
     gap: 24px;
 }
-.sect-team-social-link {
-    display: block;
+.sect-team-social-item {
     width: 40px;
     height: 40px;
-    padding-top: 12px;
+}
+.sect-team-social-link {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: var(--bg-social);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -315,7 +325,7 @@ img {
     display: block;
     width: 16px;
     height: 16px;
-    margin: 0 auto;
+    margin: 0;
     fill: var(--social-icon);
 }
 
@@ -403,36 +413,41 @@ img {
     color: var(--foot-acent);
     letter-spacing: 0.02em;
 }
-.footer-social-cnt > p {
+.footer-social-txt {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--foot-social);
+    margin-bottom: 16px;
 }
 .footer-social {
-    margin: 16px 0 0 0;
     display: flex;
     justify-content: center;
     gap: 16px;
 }
-.footer-social-link {
-    display: block;
+.footer-social-item {
     width: 40px;
     height: 40px;
-    padding-top: 8px;
+}
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: var(--bg-social);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: var(--social-acent);
+    background-color: var(--bg-foot-social);
 }
 .footer-social-link > svg {
     display: block;
     width: 24px;
     height: 24px;
-    margin: 0 auto;
+    margin: 0;
     fill: var(--social-icon);
 }
